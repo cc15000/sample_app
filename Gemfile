@@ -32,8 +32,9 @@ end
 
 group :production do
   gem 'pg', '0.12.2'
-  gem 'gravatar_image_tag', '1.0.0.pre2'
 end
+
+gem 'gravatar_image_tag', '1.0.0.pre2'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

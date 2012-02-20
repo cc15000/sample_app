@@ -8,8 +8,7 @@ gem 'rails', '3.2.1'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
-  gem 'annotate', '~> 2.4.1.beta'
-  gem 'gravatar_image_tag', '1.0.0.pre2'
+  gem 'annotate', '~> 2.4.1.beta'  
 end
 
 # Gems used only for assets and not required
@@ -33,6 +32,7 @@ end
 
 group :production do
   gem 'pg', '0.12.2'
+  gem 'gravatar_image_tag', '1.0.0.pre2'
 end
 
 # To use ActiveModel has_secure_password

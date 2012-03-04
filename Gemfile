@@ -27,7 +27,9 @@ gem 'jquery-rails'
 
 group :test do
   gem 'capybara'
-  gem 'factory_girl_rails', '1.0'
+  gem 'factory_girl_rails', '1.4.0'
+  gem 'cucumber-rails', '1.2.1'
+  gem 'database_cleaner', '0.7.0'
 end
 
 group :production do
@@ -37,7 +39,7 @@ end
 gem 'gravatar_image_tag', '1.0.0.pre2'
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'

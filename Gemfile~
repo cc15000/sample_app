@@ -28,6 +28,8 @@ gem 'jquery-rails'
 group :test do
   gem 'capybara'
   gem 'factory_girl_rails', '1.4.0'
+  gem 'cucumber-rails', '1.2.1'
+  gem 'database_cleaner', '0.7.0'
 end
 
 group :production do
@@ -50,3 +52,6 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+# To create faux users
+gem 'faker', '1.0.1'

@@ -52,3 +52,9 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+# To create faux users
+gem 'faker', '1.0.1'
+
+# Paginate the users list
+gem 'will_paginate', '3.0.3'

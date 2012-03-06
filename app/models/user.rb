@@ -12,6 +12,7 @@
 class User < ActiveRecord::Base
  attr_accessible :name, :email, :password, :password_confirmation
  has_secure_password
+ has_many :microposts, dependent: :destroy
  before_save :create_remember_token
 
 
@@ -31,6 +32,10 @@ class User < ActiveRecord::Base
   user = find_by_email(email)
   return nil if user.nil?
   return user if user.has_password?(submitted_password)
+ end
+
+ def feed
+   Micropost.where("user_id = ?", id)
  end
 
  private
